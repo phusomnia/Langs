@@ -1,0 +1,20 @@
+import std::io;
+import std::io::file;
+
+fn void main()
+{
+    File fh = file::open("input.in", "rb")!!;
+    defer (void)fh.close();
+
+    char[4096] buffer;
+
+    while (true)
+    {
+        sz read = fh.read(buffer[0..4095])!!;
+        if (read == 0) break;
+
+        for (sz i = 0; i < read; ++i) {
+            io::putchar(buffer[i]);
+        }
+    }
+}
