@@ -315,6 +315,7 @@ greet() {
     local name="John"
     echo "$name"
 }
+greet
 ```
 
 Local variables reduce side effects.

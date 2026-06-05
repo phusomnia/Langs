@@ -6,7 +6,7 @@ Without control flow, Bash scripts execute commands sequentially from top to bot
 
 Control flow allows scripts to:
 
-* Make decisions
+* Make decisions_
 * Execute different code paths
 * Repeat operations
 * Skip unnecessary work

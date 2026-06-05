@@ -5,33 +5,48 @@ echo "Hello World"
 # variables 
 Series="Lain"
 Year=1998
-
-# env variable
-export APP_ENV=production``
-
 echo "$Series is released in $Year"
 
-# global
+## env variable
+export APP_ENV=production
 
+## Readonly
+readonly VERSION="1.0"
+# VERSION="2.0"
+echo "$VERSION"
 
-# input 
-read -p "Enter your name: " name
-echo "Hello $name"
+## Local variable
+greet() {
+    local name="John"
+    echo "$name"
+}
+greet
 
-# conditions 
-read -p "Enter your age" age
-if [ $age -ge 18 ]; then 
-    echo "Adult"
-fi
+## Args 
+echo "Current: $0"
+echo "First args: $1" 
+echo "Count: $#"  
+echo "Proccess ID: $$"
+echo "Bg proc: $!"
 
-# loops 
+# Qouting
+## Single quotes
+name="Terry"
+echo '$name'
+echo "he said \"Hello\""
 
-## 
-for i in 1 2 3 4 5
-do 
-    echo $i
-done
+# Brace Exapansion
+echo file{1..5}.txt
+echo ~
 
-# Command line args
+# Command sub
+current=$(pwd)
+echo "Current file: $current"
 
-
+# Arithmetric
+echo $((5 + 3))
+expr 10 + 5
+count=0
+((count++))
+((count--))
+echo $count

@@ -2,17 +2,17 @@
 
 ## Index
 
-### 1. Introduction
+### [1. Introduction](01-Introduction.md)
 
-#### 1.1 What is Bash?
-#### 1.2 Why Learn Bash?
-#### 1.3 Common Use Cases
-#### 1.4 Bash vs Other Shells
-#### 1.5 Requirements
+#### [1.1 What is Bash?](01-Introduction.md#11-what-is-bash)
+#### [1.2 Why Learn Bash?](01-Introduction.md#12-why-learn-bash)
+#### [1.3 Common Use Cases](01-Introduction.md#13-common-use-cases)
+#### [1.4 Bash vs Other Shells](01-Introduction.md#14-bash-vs-other-shells)
+#### [1.5 Requirements](01-Introduction.md#15-requirements)
 
 ---
 
-### 2. Shell Fundamentals
+### [2. Shell Fundamentals](02-shell-fundamentals.md)
 
 #### 2.1 Shell Execution Model
 
@@ -79,7 +79,7 @@
 
 ---
 
-### 3. Control Flow
+### [3. Control Flow](03-control-flow.md)
 
 #### 3.1 Conditional Statements
 
