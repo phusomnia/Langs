@@ -7,7 +7,6 @@ from clang.cindex import (
     TranslationUnit
 )
 
-
 class HeaderGenerator:
 
     def __init__(self):
